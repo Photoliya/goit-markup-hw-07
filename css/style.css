@@ -190,6 +190,7 @@ ul {
     margin: 0;
     padding: 8;
     background-color: transparent;
+    color: var(--dark);
 }
 
 .menu {
