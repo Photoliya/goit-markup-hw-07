@@ -1213,6 +1213,7 @@ ul {
     border-radius: 50%;
     outline: none;
     color: var(--primary-brand-color);
+    stroke: var(--primary-brand-color);
 }
 
 @media (min-width: 768px) {
@@ -1328,4 +1329,10 @@ ul {
     .mobile-icon-list {
         gap: 56px;
     }
+}
+
+.mobile-menu-svg {
+    fill: currentColor;
+    stroke: currentColor;
+    display: block;
 }
