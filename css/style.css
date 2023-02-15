@@ -1027,7 +1027,7 @@ ul {
     text-align: center;
 }
 
-@media (min-width: 410px) {
+@media screen and (min-width: 410px) {
     .modal {
         width: 406px;
     }
@@ -1038,12 +1038,12 @@ ul {
     position: absolute;
     top: var(--uni-gap);
     right: var(--uni-gap);
-    /* display: inline-block; */
 
     padding: 8px;
     background: var(--Accent);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    color: var(--dark);
 }
 
 .close:hover,
@@ -1202,7 +1202,7 @@ ul {
     border: none;
     border-radius: 50%;
     outline: none;
-    color: var(--dark);
+    stroke: var(--primary-brand-color);
 }
 
 @media (min-width: 768px) {
@@ -1305,5 +1305,17 @@ ul {
 
     display: flex;
     justify-content: center;
-    gap: 56px;
+    gap: 25px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 479px) {
+    .mobile-icon-list {
+        gap: 36px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .mobile-icon-list {
+        gap: 56px;
+    }
 }
