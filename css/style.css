@@ -1212,7 +1212,6 @@ ul {
     border: none;
     border-radius: 50%;
     outline: none;
-    stroke: var(--primary-brand-color);
     color: var(--primary-brand-color);
 }
 
