@@ -527,14 +527,14 @@ ul {
 }
 
 .team-list {
-    width: 100%;
+
     text-align: center;
     padding-bottom: var(--section-gap);
 
 }
 
 .team {
-    width: 264px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: var(--uni-padding);
@@ -542,11 +542,21 @@ ul {
 
 @media (min-width: 768px) {
     .team {
-        width: 100%;
         display: flex;
-        row-gap: 64px;
+        row-gap: 24px;
         column-gap: var(--uni-gap);
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .team {
+        display: flex;
+        row-gap: 24px;
+        column-gap: var(--uni-gap);
+        flex-wrap: nowrap;
         justify-content: center;
     }
 
@@ -1203,6 +1213,7 @@ ul {
     border-radius: 50%;
     outline: none;
     stroke: var(--primary-brand-color);
+    color: var(--primary-brand-color);
 }
 
 @media (min-width: 768px) {
