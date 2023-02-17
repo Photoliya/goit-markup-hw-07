@@ -1,5 +1,6 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-hamburger" viewBox="0 0 47 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4.364" d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"/></symbol>
 <symbol id="icon-menu" viewBox="0 0 24 24">
 <path d="M3 13h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2zm0-6h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2zm0 12h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2z"/></symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">

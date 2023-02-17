@@ -37,6 +37,9 @@
     --phone-sceen: 480px;
     --tablet-screen: 768px;
     --deckstop-screen: 1200px;
+    /* indent */
+    --indent: 24px;
+    --items: 1;
 }
 
 body {
@@ -90,13 +93,12 @@ body {
     }
 }
 
+
 @media screen and (min-width: 1200px) {
 
     /*deckstop-screen */
     .container {
         max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }
 
@@ -181,16 +183,12 @@ ul {
     .header-nav {
         display: block;
         display: flex;
-
     }
-
 }
-
 
 .site-nav {
     display: flex;
     margin-left: 76px;
-
 }
 
 .nav {
@@ -229,7 +227,6 @@ ul {
     background-color: var(--primary-brand-color);
     border-radius: 2px;
 }
-
 
 .site-nav .item+.item {
     margin-left: 40px;
@@ -334,7 +331,7 @@ ul {
 }
 
 
-@media (min-width: 489px) {
+@media (min-width: 481px) {
     .hero-wrapper {
         background-image: linear-gradient(0deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
             url('../images/group-people-working768.jpg');
@@ -442,13 +439,26 @@ ul {
 
 .benefits-items {
     margin-bottom: 72px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media screen and (min-width: 768px) {
     .benefits-items {
         width: 50%;
+        padding-left: 24px;
+        padding-right: 24px;
+        text-align: left;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .benefits-items {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 
 .benefits-sub {
     font-size: 36px;
@@ -518,6 +528,11 @@ ul {
 
 .item-pics {
     display: block;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 /* section team list*/
@@ -527,37 +542,33 @@ ul {
 }
 
 .team-list {
-
     text-align: center;
     padding-bottom: var(--section-gap);
 
 }
 
 .team {
-    width: 100%;
+    width: 264px;
     margin-left: auto;
     margin-right: auto;
     margin-top: var(--uni-padding);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .team {
+        min-width: 100%;
         display: flex;
-        row-gap: 24px;
-        column-gap: var(--uni-gap);
+        row-gap: 48px;
+        column-gap: 24px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .team {
-        display: flex;
-        row-gap: 24px;
-        column-gap: var(--uni-gap);
         flex-wrap: nowrap;
-        justify-content: center;
     }
 
 }
@@ -568,11 +579,12 @@ ul {
     margin-bottom: 72px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .team .item {
         margin-bottom: 0px;
     }
 }
+
 
 .team .item:last-child {
     margin-bottom: 0;
@@ -628,6 +640,12 @@ ul {
     gap: var(--uni-gap);
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .clients-list {
+        flex-wrap: nowrap;
+    }
 }
 
 .client-item {
@@ -774,8 +792,11 @@ ul {
 
 .card-thumbs {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 @media (min-width: 768px) {
@@ -1212,8 +1233,8 @@ ul {
     border: none;
     border-radius: 50%;
     outline: none;
-    color: var(--primary-brand-color);
-    stroke: var(--primary-brand-color);
+    stroke: var(--dark);
+
 }
 
 @media (min-width: 768px) {
@@ -1332,7 +1353,6 @@ ul {
 }
 
 .mobile-menu-svg {
-    fill: currentColor;
     stroke: currentColor;
     display: block;
 }
