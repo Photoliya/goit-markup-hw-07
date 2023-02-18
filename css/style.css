@@ -80,7 +80,7 @@ body {
 
     /* tablet-screen */
     .container {
-        max-width: 428px;
+        max-width: 480px;
     }
 }
 
@@ -89,7 +89,7 @@ body {
 
     /* tablet-screen */
     .container {
-        max-width: 736px;
+        max-width: 768px;
     }
 }
 
@@ -541,11 +541,31 @@ ul {
 
 .sec-team {
     background: var(--light);
+    padding-top: 96px;
+}
+
+@media screen and (min-width: 1200px) {
+    .sec-team {
+        padding-top: 120px;
+    }
 }
 
 .team-list {
     text-align: center;
-    padding-bottom: var(--section-gap);
+    padding-bottom: 96px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        padding-bottom: 104px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team-list {
+        padding-bottom: 120px;
+    }
 
 }
 
@@ -597,11 +617,12 @@ ul {
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team .txt {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .team-icon-list {
@@ -629,7 +650,13 @@ ul {
 /* customers */
 
 .section-customers {
-    padding-bottom: var(--section-gap);
+    padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1200px) {
+    .section-customers {
+        padding-bottom: var(--section-gap);
+    }
 }
 
 .clients {
@@ -654,7 +681,7 @@ ul {
     display: block;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
-    padding: 16px 31px;
+    padding: 16px 32px;
     color: var(--light-slate);
 
     transition-property: color, border-color;
@@ -889,14 +916,15 @@ ul {
     .footer-block {
         display: flex;
         text-align: left;
+        flex-wrap: nowrap;
     }
 
     .footer-icons-items {
-        margin-left: 120pxx;
+        margin-left: 120px;
     }
 
     .footer-logo {
-        margin-left: 50px;
+        margin-left: 0;
     }
 }
 
@@ -1264,6 +1292,7 @@ ul {
 
     transform: translateX(110%);
     transition: transform 250ms ease-in-out;
+    overflow: scroll;
 }
 
 .menu-container.is-open {
@@ -1281,7 +1310,7 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    padding-top: 32px;
+    margin-top: 80px;
 }
 
 .mobile-menu li {
@@ -1295,7 +1324,6 @@ ul {
 
 .mobile-menu .link {
     display: block;
-    padding: 10px;
     color: var(--dark);
     font-weight: 700;
     font-size: 36px;
@@ -1309,7 +1337,7 @@ ul {
 }
 
 .mobile-contacts {
-    margin-top: auto;
+    margin-top: 284px;
 }
 
 .mobile-contacts li {
@@ -1340,6 +1368,10 @@ ul {
     display: flex;
     justify-content: center;
     gap: 25px;
+}
+
+.mobile-icon-list .item-icon {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 321px) and (max-width: 479px) {
